@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Minimal cinematic portfolio website for a photographer and videographer."
+    />
+    <title>Robert Munteanu — Cinematic Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Fixed site header -->
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#hero" aria-label="Go to top">
+          <span class="brand-mark"></span>
+          <span class="brand-text">Robert Munteanu</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#portfolio">Portfolio</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="hero" aria-label="Introduction">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+          <p class="eyebrow">Photography · Videography · Post</p>
+          <h1>Crafting cinematic images with clarity, mood, and story.</h1>
+          <p class="hero-text">
+            Minimal, high-end visual work for portraits, brands, and atmosphere-driven storytelling.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#portfolio">View Portfolio</a>
+            <a class="button button-secondary" href="#contact">Get in Touch</a>
+          </div>
+        </div>
+
+        <a class="scroll-indicator" href="#portfolio" aria-label="Scroll to portfolio">
+          <span></span>
+          <span class="scroll-label">Scroll</span>
+        </a>
+      </section>
+
+      <!-- PORTFOLIO -->
+      <section class="section portfolio-section" id="portfolio">
+        <div class="container section-head">
+          <div>
+            <p class="eyebrow">Selected Work</p>
+            <h2>Portfolio</h2>
+          </div>
+          <p class="section-copy">
+            A dark, spacious grid designed to let the imagery lead. Replace the placeholder assets with your final work.
+          </p>
+        </div>
+
+        <div class="container gallery" aria-label="Portfolio gallery">
+          <!-- Using anchors keeps the gallery usable even if JavaScript is disabled -->
+          <a class="gallery-item" href="assets/gallery-01.jpg" data-caption="Urban Portraits">
+            <img src="assets/gallery-01.jpg" alt="Portfolio item 1 placeholder" loading="lazy" />
+            <span class="gallery-meta">
+              <strong>Urban Portraits</strong>
+              <em>Photography</em>
+            </span>
+          </a>
+
+          <a class="gallery-item" href="assets/gallery-02.jpg" data-caption="Night Frames">
+            <img src="assets/gallery-02.jpg" alt="Portfolio item 2 placeholder" loading="lazy" />
+            <span class="gallery-meta">
+              <strong>Night Frames</strong>
+              <em>Photography</em>
+            </span>
+          </a>
+
+          <a class="gallery-item gallery-item--wide" href="assets/gallery-03.jpg" data-caption="Motion Study">
+            <img src="assets/gallery-03.jpg" alt="Portfolio item 3 placeholder" loading="lazy" />
+            <span class="gallery-meta">
+              <strong>Motion Study</strong>
+              <em>Videography</em>
+            </span>
+          </a>
+
+          <a class="gallery-item" href="assets/gallery-04.jpg" data-caption="Editorial Mood">
+            <img src="assets/gallery-04.jpg" alt="Portfolio item 4 placeholder" loading="lazy" />
+            <span class="gallery-meta">
+              <strong>Editorial Mood</strong>
+              <em>Photography</em>
+            </span>
+          </a>
+
+          <a class="gallery-item" href="assets/gallery-05.jpg" data-caption="Visual Narrative">
+            <img src="assets/gallery-05.jpg" alt="Portfolio item 5 placeholder" loading="lazy" />
+            <span class="gallery-meta">
+              <strong>Visual Narrative</strong>
+              <em>Direction</em>
+            </span>
+          </a>
+
+          <a class="gallery-item" href="assets/gallery-06.jpg" data-caption="Soft Light Portrait">
+            <img src="assets/gallery-06.jpg" alt="Portfolio item 6 placeholder" loading="lazy" />
+            <span class="gallery-meta">
+              <strong>Soft Light Portrait</strong>
+              <em>Photography</em>
+            </span>
+          </a>
+
+          <a class="gallery-item gallery-item--tall" href="assets/gallery-07.jpg" data-caption="Cinematic Still">
+            <img src="assets/gallery-07.jpg" alt="Portfolio item 7 placeholder" loading="lazy" />
+            <span class="gallery-meta">
+              <strong>Cinematic Still</strong>
+              <em>Videography</em>
+            </span>
+          </a>
+
+          <a class="gallery-item" href="assets/gallery-08.svg" data-caption="Documentary Texture">
+            <img src="assets/gallery-08.svg" alt="Portfolio item 8 placeholder" loading="lazy" />
+            <span class="gallery-meta">
+              <strong>Documentary Texture</strong>
+              <em>Photography</em>
+            </span>
+          </a>
+
+          <a class="gallery-item" href="assets/gallery-09.svg" data-caption="Monochrome Study">
+            <img src="assets/gallery-09.svg" alt="Portfolio item 9 placeholder" loading="lazy" />
+            <span class="gallery-meta">
+              <strong>Monochrome Study</strong>
+              <em>Photography</em>
+            </span>
+          </a>
+
+          <a class="gallery-item" href="assets/gallery-10.svg" data-caption="Brand Sequence">
+            <img src="assets/gallery-10.svg" alt="Portfolio item 10 placeholder" loading="lazy" />
+            <span class="gallery-meta">
+              <strong>Brand Sequence</strong>
+              <em>Post-production</em>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section class="section" id="services">
+        <div class="container section-head section-head--stacked">
+          <p class="eyebrow">What I Do</p>
+          <h2>Services</h2>
+        </div>
+
+        <div class="container services-grid">
+          <article class="service-card">
+            <h3>Photography</h3>
+            <p>
+              Clean, image-first photography for portraits, lifestyle sessions, editorials, and branded visual campaigns.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3>Videography</h3>
+            <p>
+              Cinematic short-form and long-form video built around atmosphere, movement, pacing, and strong visual identity.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3>Editing / Post-production</h3>
+            <p>
+              Color work, sequencing, sound polish, and finishing touches that bring raw footage into a cohesive final piece.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="container about-grid">
+          <div class="about-media">
+            <img src="assets/portrait-placeholder.jpg" alt="Portrait placeholder" />
+          </div>
+
+          <div class="about-copy">
+            <p class="eyebrow">About</p>
+            <h2>Visual work rooted in mood, detail, and restraint.</h2>
+            <p>
+              I create photography and video with a cinematic eye—focused on atmosphere, contrast, rhythm, and honest visual storytelling. My approach is minimal in design and intentional in execution, allowing each frame to feel polished, immersive, and memorable.
+            </p>
+            <p>
+              This section is intentionally concise. Replace it with your own short bio, core specialties, and the type of projects you want to attract.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section section-contact" id="contact">
+        <div class="container contact-wrap">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s build something visually precise.</h2>
+          </div>
+
+          <div class="contact-links">
+            <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a>
+            <a href="https://instagram.com/yourhandle" target="_blank" rel="noreferrer">Instagram</a>
+            <a href="https://youtube.com/@yourchannel" target="_blank" rel="noreferrer">YouTube / Portfolio</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 Robert Munteanu. All rights reserved.</p>
+        <a href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image preview">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close preview">×</button>
+      <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">‹</button>
+
+      <figure class="lightbox-figure">
+        <img id="lightboxImage" src="" alt="Expanded portfolio item" />
+        <figcaption id="lightboxCaption"></figcaption>
+      </figure>
+
+      <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">›</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

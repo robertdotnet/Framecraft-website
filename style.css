@@ -302,6 +302,10 @@ h3 {
   grid-column: span 8;
 }
 
+.gallery-item--full {
+  grid-column: 1 / -1;
+}
+
 .gallery-item--tall {
   grid-row: span 2;
   min-height: 100%;
@@ -605,4 +609,42 @@ h3 {
     animation: none !important;
     transition: none !important;
   }
+}
+
+/* Premium gallery hover */
+
+.gallery-meta {
+transform: translateY(12px);
+opacity: 0;
+transition: all 260ms ease;
+}
+
+.gallery-item:hover .gallery-meta {
+transform: translateY(0);
+opacity: 1;
+}
+
+.gallery-item img {
+transition: transform 450ms ease, filter 450ms ease;
+}
+
+.gallery-item:hover img {
+transform: scale(1.08);
+filter: brightness(1.08);
+}
+
+
+/* Better hero headline weight */
+
+h1 {
+font-weight: 800;
+}
+
+
+/* Subtle gallery glow */
+
+.gallery-item:hover {
+box-shadow:
+0 25px 80px rgba(0,0,0,0.6),
+0 0 0 1px rgba(255,255,255,0.08);
 }

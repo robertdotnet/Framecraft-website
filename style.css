@@ -32,6 +32,19 @@ body {
   line-height: 1.6;
 }
 
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('assets/noise-texture.svg') repeat;
+  opacity: 0.02;
+  pointer-events: none;
+  z-index: -1;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -186,6 +199,8 @@ h3 {
 
 .hero-actions {
   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 0.9rem;
   margin-top: 2rem;

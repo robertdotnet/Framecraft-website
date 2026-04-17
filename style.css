@@ -292,6 +292,9 @@ h3 {
 
 .section-copy {
   max-width: 38rem;
+}
+
+.section-head:not(.section-head--stacked) .section-copy {
   justify-self: end;
 }
 
